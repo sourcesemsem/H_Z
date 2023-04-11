@@ -3,8 +3,3 @@ build:
       worker: Dockerfile
 run:
    worker: python3 -m zthon
-
-
-# ◉ Source : @FTTUTY ∆
-
-# ◉ Developer : @DEV_SAMIR ∆
