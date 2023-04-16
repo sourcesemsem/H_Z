@@ -51,7 +51,7 @@
     },
     "TZ": {
       "description": "المنطقـــه الزمنيـــه لا تغيــرهـــا",
-      "value": "Asia/Baghdad",
+      "value": "Africa/Cairo",
       "required": false
     }
   },
