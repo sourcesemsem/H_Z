@@ -1,13 +1,14 @@
-FROM zeinn1/zelzal:alpine
+FROM zed-thon/zellzal:slim-buster
 
-#clonning repo 
-RUN git clone https://github.com/sourcesemsem/S_Z/tree/master.git /root/zthon
-#working directory 
-WORKDIR /root/zthon
+RUN git clone https://github.com/Zed-Thon/Zellzal.git /root/Zara
 
-# Install requirements
-RUN pip3 install -U -r requirements.txt
+WORKDIR /root/Zara
 
-ENV PATH="/home/zthon/bin:$PATH"
+RUN curl -sL https://deb.nodesource.com/setup_16.x | bash -
+RUN apt-get install -y nodejs
+RUN npm i -g npm
+RUN pip3 install --no-cache-dir -r requirements.txt
 
-CMD ["python3","-m","zthon"]
+ENV PATH="/home/Zara/bin:$PATH"
+
+CMD ["python3","-m","Zara"]
